@@ -1,0 +1,48 @@
+{
+  "name": "react-apple-emojis",
+  "version": "1.0.0",
+  "description": "Apple emojis for React as images",
+  "main": "lib/index.js",
+  "browser": "lib/index.umd.js",
+  "module": "lib/index.es.js",
+  "files": [
+    "/lib"
+  ],
+  "keywords": [],
+  "author": "David Hérault <dherault@gmail.com> (https://github.com/dherault)",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "styleguidist server",
+    "build": "rollup -c",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "docs:build": "styleguidist build"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@material-ui/core": "^4.10.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@testing-library/react": "^10.3.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "jest": "^26.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.13.1",
+    "react-styleguidist": "^11.0.8",
+    "rollup": "^2.17.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "webpack": "^4.43.0"
+  }
+}
