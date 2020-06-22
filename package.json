@@ -1,6 +1,6 @@
 {
   "name": "react-apple-emojis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Apple emojis for React as images",
   "main": "lib/index.js",
   "browser": "lib/index.umd.js",
@@ -8,7 +8,7 @@
   "files": [
     "/lib"
   ],
-  "keywords": [],
+  "keywords": ["react", "apple", "emoji", "emojis"],
   "author": "David Hérault <dherault@gmail.com> (https://github.com/dherault)",
   "license": "MIT",
   "scripts": {
