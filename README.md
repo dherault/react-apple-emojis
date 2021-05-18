@@ -33,21 +33,23 @@ const fs = require('fs')
 const path = require('path')
 
 const data = fs.readFileSync('../node_modules/react-apple-emojis/lib/data.json', 'utf-8')
-const outputData = {}
 const outputLocation = path.join(__dirname, '../src/emoji-data.json')
 
 async function uploadEmojisToBucket() {
+  const outputData = {}
+
   for (const [name, url] of Object.entries(JSON.parse(data))) {
     const newUrl = await uploadImageToBucket(name, url)
 
     outputData[name] = newUrl
   }
+
+  fs.writeFileSync(outputLocation, JSON.stringify(outputData, null, 2), 'utf-8')
+
+  console.log('Emoji data available at', outputLocation)
 }
 
-uploadEmojisToBucket().then(() => {
-  fs.writeFileSync(outputLocation, JSON.stringify(outputData, null, 2), 'utf-8')
-})
-
+uploadEmojisToBucket()
 ```
 
 ```jsx
