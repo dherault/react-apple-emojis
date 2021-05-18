@@ -1,3 +1,5 @@
+import React from 'react'
+
 import DataContext from './DataContext'
 
 function EmojiProvider({ data, children }) {
