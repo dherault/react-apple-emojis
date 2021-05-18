@@ -1,13 +1,14 @@
-import React from 'react'
+import { useContext } from 'react'
 import propTypes from 'prop-types'
 
-import data from '../data.json'
+import DataContext from './DataContext'
 
 function Emoji({ name, ...props }) {
+  const data = useContext(DataContext)
   const url = data[name]
 
   if (!url) {
-    console.warn('Emoji', name, 'could not be found.')
+    console.warn(`Emoji ${name}'s URL could not be found.`)
   }
 
   return (

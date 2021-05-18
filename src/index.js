@@ -1,4 +1,2 @@
-import Emoji from './components/Emoji'
-
-export default Emoji
-export * from './data.json'
+export { default as EmojiProvider } from './EmojiProvider'
+export { default as Emoji } from './Emoji'
