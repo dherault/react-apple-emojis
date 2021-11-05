@@ -1,6 +1,6 @@
 {
   "name": "react-apple-emojis",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Apple emojis for React as images",
   "main": "lib/index.js",
   "files": [
@@ -45,7 +45,7 @@
     "eslint-config-dherault": "^1.6.0",
     "jest": "^26.6.3",
     "react": "^17.x",
-    "react-dom": "^117.x",
+    "react-dom": "^17.x",
     "rollup": "^2.48.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",

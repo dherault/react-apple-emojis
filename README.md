@@ -2,6 +2,8 @@
 
 Apple emojis for React as images.
 
+The package is heavy because it has a full list of emojis included in it. If you want it to be lighter you can use your own list and use tree-shaking to reduce your bundle size.
+
 ## Installation
 
 `npm install --save react-apple-emojis` or `yarn add react-apple-emojis`
@@ -21,6 +23,8 @@ function App() {
   )
 }
 ```
+
+The `Emoji` component renders to an `img` tag. So pass any prop you would normaly pass to an `img`.
 
 The complete list of names can be found on [Emojipedia](https://emojipedia.org/apple/). Just click on an emoji and look at the browser's URL to find its name.
 
