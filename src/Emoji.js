@@ -13,6 +13,7 @@ function Emoji({ name, ...props }) {
 
   return (
     <img
+      key={name}
       src={url}
       alt={name}
       aria-label={name}

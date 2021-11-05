@@ -1,6 +1,6 @@
 {
   "name": "react-apple-emojis",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Apple emojis for React as images",
   "main": "lib/index.js",
   "files": [
@@ -29,9 +29,9 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
+    "prop-types": "*",
     "react": ">=16.x",
-    "react-dom": ">=16.x",
-    "prop-types": "*"
+    "react-dom": ">=16.x"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
