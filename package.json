@@ -1,6 +1,6 @@
 {
   "name": "react-apple-emojis",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Apple emojis for React as images",
   "main": "lib/index.js",
   "files": [
@@ -34,24 +34,23 @@
     "react-dom": ">=16.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-react": "^7.13.13",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@rollup/plugin-json": "^4.1.0",
-    "@testing-library/react": "^11.2.7",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.4",
     "babel-plugin-module-resolver": "^4.1.0",
-    "eslint": "^7.26.0",
-    "eslint-config-dherault": "^1.6.0",
-    "jest": "^26.6.3",
+    "eslint": "^8.13.0",
+    "eslint-config-dherault": "^1.7.3",
+    "jest": "^27.5.1",
     "react": "^17.x",
     "react-dom": "^17.x",
-    "rollup": "^2.48.0",
+    "rollup": "^2.70.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-uglify": "^6.0.4"
+    "rollup-plugin-uglify": "^5.0.2"
   }
 }
