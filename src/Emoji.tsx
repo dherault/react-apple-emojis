@@ -1,9 +1,13 @@
-import React, { useContext } from 'react'
+import { useContext, ImgHTMLAttributes   } from 'react'
 import propTypes from 'prop-types'
 
 import DataContext from './DataContext'
 
-function Emoji({ name, ...props }) {
+type EmojiProps = JSX.IntrinsicElements["img"] & {
+  name: string
+}
+
+function Emoji({ name, ...props }: EmojiProps) {
   const data = useContext(DataContext)
   const url = data[name]
 
@@ -13,7 +17,6 @@ function Emoji({ name, ...props }) {
 
   return (
     <img
-      key={name}
       src={url}
       alt={name}
       aria-label={name}

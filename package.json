@@ -4,7 +4,8 @@
   "description": "Apple emojis for React as images",
   "main": "lib/index.js",
   "files": [
-    "/lib"
+    "dist/**/*",
+    "src/**/*"
   ],
   "keywords": [
     "react",
@@ -25,8 +26,9 @@
   "scripts": {
     "test": "jest",
     "start": "",
-    "build": "rm -rf lib && rollup -c && cp src/data.json lib/data.json",
-    "prepublishOnly": "npm run build"
+    "clean": "rimraf dist",
+    "build": "npx tsc --declaration",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "peerDependencies": {
     "prop-types": "*",
@@ -35,22 +37,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "@rollup/plugin-json": "^4.1.0",
-    "babel-loader": "^8.2.4",
-    "babel-plugin-module-resolver": "^4.1.0",
+    "@types/react": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint": "^8.13.0",
     "eslint-config-dherault": "^1.7.3",
-    "jest": "^27.5.1",
     "react": "^17.x",
     "react-dom": "^17.x",
-    "rollup": "^2.70.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-uglify": "^5.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
   }
 }
