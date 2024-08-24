@@ -36,18 +36,16 @@
     "react-dom": ">=16.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "@types/react": "^18.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@types/react": "^18.3.4",
     "eslint": "^8.13.0",
-    "eslint-config-dherault": "^1.7.3",
-    "react": "^17.x",
-    "react-dom": "^17.x",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.6.3"
+    "eslint-config-dherault-typescript": "^1.3.7",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
   }
 }

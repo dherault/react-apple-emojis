@@ -9,7 +9,7 @@ type EmojiProps = JSX.IntrinsicElements["img"] & {
 
 function Emoji({ name, ...props }: EmojiProps) {
   const data = useContext(DataContext)
-  const url = data[name]
+  const url = data[name as keyof typeof data]
 
   if (!url) {
     console.warn(`Emoji ${name}'s URL could not be found.`)
