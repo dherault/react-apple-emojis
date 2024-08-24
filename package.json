@@ -1,6 +1,6 @@
 {
   "name": "react-apple-emojis",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Apple emojis for React as images",
   "main": "dist/index.js",
   "files": [
