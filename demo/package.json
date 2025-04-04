@@ -10,16 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-apple-emojis": "^2.2.2",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-apple-emojis": "^2.4.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "globals": "^15.15.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "globals": "^16.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.5"
   }
 }
