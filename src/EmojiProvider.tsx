@@ -1,12 +1,9 @@
 import { PropsWithChildren} from 'react'
-import PropTypes from 'prop-types'
 
 import DataContext from './DataContext'
 
 type EmojiProviderProps = PropsWithChildren<{
-  data: {
-    [key: string]: string
-  }
+  data: Record<string, string>
 }>
 
 function EmojiProvider({ data, children }: EmojiProviderProps) {
@@ -19,10 +16,6 @@ function EmojiProvider({ data, children }: EmojiProviderProps) {
       {children}
     </DataContext.Provider>
   )
-}
-
-EmojiProvider.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default EmojiProvider

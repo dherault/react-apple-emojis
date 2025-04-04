@@ -26,7 +26,7 @@ function App() {
   return (
     <EmojiProvider data={emojiData}>
       <Emoji name="red-heart" />
-      <Emoji name="smiling-face-with-hearts" width={16} />
+      <Emoji name="smiling face with hearts" width={16} />
     </EmojiProvider>
   )
 }
@@ -34,7 +34,7 @@ function App() {
 
 The `Emoji` component renders to an `img` tag. So pass any prop you would normally pass to an `img`.
 
-The complete list of names can be found on [Emojipedia](https://emojipedia.org/apple/). Just click on an emoji and look at the browser's URL to find its name.
+You can use the official names, with or without dashes
 
 **Relies on [Emojipedia](https://emojipedia.org)'s CDN, usage on heavy traffic pages is disadvised. To use your own CDN:**
 
@@ -46,7 +46,6 @@ function App() {
   return (
     <EmojiProvider data={emojiData}>
       <Emoji name="red-heart" />
-      <Emoji name="smiling-face-with-hearts" width={16} />
     </EmojiProvider>
   )
 }

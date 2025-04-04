@@ -1,5 +1,4 @@
 import { useContext, ImgHTMLAttributes   } from 'react'
-import propTypes from 'prop-types'
 
 import DataContext from './DataContext'
 
@@ -9,10 +8,10 @@ type EmojiProps = JSX.IntrinsicElements["img"] & {
 
 function Emoji({ name, ...props }: EmojiProps) {
   const data = useContext(DataContext)
-  const url = data[name as keyof typeof data]
+  const url = data[name.replaceAll(' ', '-') as keyof typeof data]
 
   if (!url) {
-    console.warn(`Emoji ${name}'s URL could not be found.`)
+    console.warn(`Emoji ${name} could not be found in the EmojiProvider's data.`)
   }
 
   return (
@@ -23,10 +22,6 @@ function Emoji({ name, ...props }: EmojiProps) {
       {...props}
     />
   )
-}
-
-Emoji.propTypes = {
-  name: propTypes.string.isRequired,
 }
 
 export default Emoji

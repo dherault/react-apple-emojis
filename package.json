@@ -28,10 +28,12 @@
     "start": "",
     "clean": "rimraf dist",
     "build": "npx tsc --declaration",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "link": "npm link && cd demo && npm link react-apple-emojis",
+    "dev": "nodemon --watch ./src --ext tsx,json --exec 'npm run build'",
+    "create-data": "bun ./scripts/createData.ts"
   },
   "peerDependencies": {
-    "prop-types": "*",
     "react": ">=16.x",
     "react-dom": ">=16.x"
   },
@@ -43,6 +45,7 @@
     "@types/react": "^18.3.4",
     "eslint": "^8.13.0",
     "eslint-config-dherault-typescript": "^1.4.0",
+    "nodemon": "^3.1.9",
     "react": "^18.x",
     "react-dom": "^18.x",
     "rimraf": "^6.0.1",
