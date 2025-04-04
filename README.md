@@ -10,12 +10,6 @@ The package has a full list of emojis included in it. If you want your build to 
 npm install --save react-apple-emojis
 ```
 
-or
-
-```
-yarn add react-apple-emojis
-```
-
 ## Usage
 
 ```jsx
@@ -34,7 +28,7 @@ function App() {
 
 The `Emoji` component renders to an `img` tag. So pass any prop you would normally pass to an `img`.
 
-You can use the official names, with or without dashes
+You can use the official names, with or without dashes, as can be found on [Emojipedia](https://emojipedia.org).
 
 **Relies on [Emojipedia](https://emojipedia.org)'s CDN, usage on heavy traffic pages is disadvised. To use your own CDN:**
 
